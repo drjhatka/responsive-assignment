@@ -39,14 +39,14 @@ body{
     }
     .header_menus{
         flex-direction: column;
-        gap: 20px;
+       
         
         
     }
     .menu{
         background-color: black;
         color: white;
-...... 
+...... list-style-type:none
 ......  width:100%;
     }
 }
