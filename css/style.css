@@ -5,6 +5,7 @@
 body{
     margin: 0 auto;   
     font-family: "Work Sans";
+  box-sizing:border-box;
 }
 
 .header{
@@ -21,7 +22,7 @@ body{
     text-align: center;
     font-weight: bold;
 }
-.menus{
+.header_menus{
     display: flex;
     list-style-type:none;
     gap:50px;
@@ -34,17 +35,18 @@ body{
     .header{
         flex-direction: column;
         gap: 20px;
-        justify-content: auto;
+        
     }
-    .menus{
+    .header_menus{
         flex-direction: column;
         gap: 20px;
+        
         
     }
     .menu{
         background-color: black;
         color: white;
-display :block;
-width:100%;
+......  display :block;
+......  width:100%;
     }
 }
