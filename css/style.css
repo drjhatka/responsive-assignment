@@ -22,7 +22,7 @@ body{
     text-align: center;
     font-weight: bold;
 }
-.header_menus{
+.header_menu{
     display: flex;
     list-style-type:none;
     margin-right:50px;
