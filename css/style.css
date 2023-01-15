@@ -23,7 +23,7 @@ body{
     font-weight: bold;
 }
 .header_menus{
-    display: inline-block;
+    display: flex;
     list-style-type:none;
     margin-right:50px;
     
