@@ -1,54 +1,52 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-
- 
-body{
-    margin: 0 auto;   
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+body {
+    margin: 0 auto;
     font-family: "Work Sans";
-  box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-.header{
-
-    /* padding-top: 30px; */
+.header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
-.header_title{
+.header_title {
     font-size: 35px;
     text-align: center;
     font-weight: bold;
 }
-.header_menu >ul li{
+
+.header_menus {
     display: flex;
-    list-style-type:none;
-    margin-right:50px;
-    
 }
 
+.menu {
+    list-style: none;
+    margin-right: 50px;
+}
 
+.menu a {
+    text-decoration: none;
+    color: black;
+}
 
 @media screen and (max-width:676px) {
-    .header{
-
+    .header {
         flex-direction: column;
         gap: 20px;
-        
     }
-    .header_menus{
-display:flex;
+    .header_menus {
+        display: flex;
         flex-direction: column;
-       
-        
-        
+        width: 100%;
     }
-    .menu{
-        background-color: black;
+    .menu {
+        background-color: rgb(85, 67, 67);
         color: white;
-...... list-style-type:none;
-......  width:100%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
