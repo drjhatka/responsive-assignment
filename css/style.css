@@ -93,6 +93,7 @@ padding-top: 30px;
 .fourth_column{
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
+    gap:20px;
     
 }
 .fourth_col_info_container{
@@ -116,4 +117,12 @@ padding-top: 30px;
 .card_text{
     
     font-size: small;
+}
+.floating_btn button{
+    margin-top: -100px;
+    margin-left: 500px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
 }
