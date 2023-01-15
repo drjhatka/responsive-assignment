@@ -23,9 +23,9 @@ body{
     font-weight: bold;
 }
 .header_menus{
-    display: flex;
+    display: inline-block;
     list-style-type:none;
-    gap:50px;
+    margin-right:50px;
     
 }
 
@@ -33,11 +33,13 @@ body{
 
 @media screen and (max-width:676px) {
     .header{
+
         flex-direction: column;
         gap: 20px;
         
     }
     .header_menus{
+display:flex;
         flex-direction: column;
        
         
