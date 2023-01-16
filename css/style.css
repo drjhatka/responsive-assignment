@@ -55,6 +55,8 @@ body{
     background-color: orange;
     border-radius: 5px;
     border:none;
+    color: white;
+    font-weight: bold;
 }
 
 .second_col_img img{
@@ -101,6 +103,10 @@ padding-top: 30px;
     display: flex;
     flex-direction: column;
 }
+.left_ruler{
+    border-left: 10px solid red;
+
+}
 .fourth_col_img img{
     width: 100%;
     object-fit: cover;
@@ -125,4 +131,147 @@ padding-top: 30px;
     color: white;
     font-weight: bold;
     font-size: 35px;
+}
+.fifth_column > .title{
+    display: flex;
+    border-left: 10px solid orange;
+    padding: 20px;
+    font-size: 35px;
+}
+.fifth_column> p{
+    text-align: left;
+    font-size: 0.8em;
+    margin-right: 50px;
+
+}
+
+.sixth_column{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top:50px ;
+}
+.icon_cards{
+    padding: 20px;
+    width: 180px;
+    height: 180px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.sixth_column >img{
+    margin-top: 10px;
+    max-width: 48px;
+    max-height: 46px;
+}
+.seven_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 ;
+}
+.sponsor_column{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+
+.sponsor>img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);width: 50%;
+
+}
+
+.footer{
+    margin-top: 30px;
+    height: 30px;
+    background-color: #FFF4E7;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+/* now the responsive part */
+
+@media all and (max-width:576px) {
+    .header {
+        flex-direction: column;
+    }
+    .header_title{
+        text-align: center;
+        background-color: #131313;
+        color: white;
+    }
+    .header_menus{
+        flex-direction: column;
+        padding: 0;
+        
+    }
+    .menu{
+        background-color: #a1b3e4;
+        padding: 10px;
+        text-align: center;
+
+    }
+    .menu a{
+        color: white;
+    }
+
+    .third_column{
+        display: flex;
+        flex-direction: column;
+        
+    } 
+    .third_column_info{
+        grid-template-columns: 1;
+        grid-template-rows: repeat(1,1fr);
+    }
+    .third_column_info h3{
+        background-color: aquamarine;
+        padding: 20px;
+        text-align: center;
+    }
+    .img_container img{
+        width: 100%;
+        margin-top: 20px;
+    } 
+    .fourth_column{
+        padding-top:20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .floating_btn >button{
+        position: relative;
+        margin: 20px;
+        padding: 0;
+    }
+    .card_container{
+        border: none;
+    }
+    .sixth_column{
+        display: flex;
+        flex-direction: column;
+    }
+    .sponsor_column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.5em;
+    }
+    .seven_column{
+        margin: 0;
+    }
+    .footer{
+        width: 100%;
+        font-size: .8em;
+        padding: 20px 0;
+    }
+    
 }
